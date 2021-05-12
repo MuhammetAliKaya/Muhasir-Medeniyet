@@ -1,0 +1,522 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+		<style type="text/css">
+		canvas {
+		background-image: url("canvas.jpg");
+		border-radius:  10px;
+		opacity:0.5;
+		padding-left: 0;
+		padding-right: 0;
+		position: absolute;
+		left: 250px;
+		display: block;
+		width: 1000px;
+		height:700px;
+		}
+		
+		.baslatbuton{
+		background-color: white;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding 10px;
+		color: black;
+		position: absolute;
+		left: 1115px;
+		top: 200px;
+		width: 120px;
+		height: 100px;
+		}
+		.durdurbuton{
+		background-color: white;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding 10px;
+		color: black;
+		position: absolute;
+		left: 1115px;
+		top: 330px;
+		width: 120px;
+		height: 100px;
+		}
+		
+		.para{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 1100px;
+		top: 20px;
+		width: 100px;
+		
+		}
+		.bütünlük{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 940px;
+		top: 20px;
+		width: 100px;
+		
+		}
+		.güvenlik{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 780px;
+		top: 20px;
+		width: 100px;
+		
+		}
+		.tarih{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 20px;
+		width: 100px;
+		
+		}
+			.refah{
+		background-color: black;
+		opacity:0.7;
+		border-radius: 20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 450px;
+		top: 20px;
+		width: 100px;
+		
+		}
+		.sadakat{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 620px;
+		top: 20px;
+		width: 100px;
+		
+		}
+		
+		.paradeğişim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 5px;
+		color: white;
+		position: absolute;
+		left: 1115px;
+		top: 80px;
+		width: 80px;
+		height 20px;
+		}
+		
+		
+		.bütünlükdeğişim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 5px;
+		color: white;
+		position: absolute;
+		left: 955px;
+		top: 80px;
+		width: 80px;
+		height 20px;
+		}
+		
+		.güvenlikdeğişim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 5px;
+		color: white;
+		position: absolute;
+		left: 795px;
+		top: 80px;
+		width: 80px;
+		height 20px;
+		}
+		
+		.sadakatdeğişim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 5px;
+		color: white;
+		position: absolute;
+		left: 635px;
+		top: 80px;
+		width: 80px;
+		height 20px;
+		}
+		
+		.refahdeğişim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  20px/10px;
+		padding: 5px;
+		color: white;
+		position: absolute;
+		left: 475px;
+		top: 80px;
+		width: 80px;
+		height 20px;
+		}
+		
+		.üretim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 100px;
+		width: 150px;
+		
+		}
+		.eğitim{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 150px;
+		width: 150px;
+		
+		}
+		.adalet{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 200px;
+		width: 150px;
+		
+		}
+		.turizm{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 250px;
+		width: 150px;
+		
+		}
+		.dışilişki{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 300px;
+		width: 150px;
+		
+		}
+		.vergi{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 350px;
+		width: 150px;
+		
+		}
+		.ihracat{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 400px;
+		width: 150px;
+		
+		}
+		.ithalat{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 450px;
+		width: 150px;
+		
+		}
+			.ordu{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 500px;
+		width: 150px;
+		
+		}
+			.sağlık{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 550px;
+		width: 150px;
+		
+		}
+			.istihdam{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 600px;
+		width: 150px;
+		
+		}
+			.akademi{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  30px/20px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 300px;
+		top: 650px;
+		width: 150px;
+		
+		}
+		.ideoloji{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding: 10px;
+		color: white;
+		position: absolute;
+		left: 500px;
+		top: 600px;
+		width: 720px;
+		height:20px;
+		}
+		.kapitalizm{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding: 1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 500px;
+		top: 650px;
+		width: 140px;
+		height:40px;
+		}
+		.sosyalizm{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 650px;
+		top: 650px;
+		width: 140px;
+		height:40px;
+		}
+		.monarşizm{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding: 1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 800px;
+		top: 650px;
+		width: 140px;
+		height:40px;
+		}
+		.teokrasi{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 950px;
+		top: 650px;
+		width: 140px;
+		height:40px;
+		}
+		.anarşizm{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 1100px;
+		top: 650px;
+		width: 140px;
+		height:40px;
+		}
+		.nüfusyön{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  10px;
+		color: white;
+		position: absolute;
+		left: 500px;
+		top: 500px;
+		width: 720px;
+		height:20px;
+		}
+		.narttır{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 500px;
+		top: 550px;
+		width: 240px;
+		height:40px;
+		}
+		.nsabit{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 750px;
+		top: 550px;
+		width: 240px;
+		height:40px;
+		}
+		.nazalt{
+		background-color: black;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		padding:  1px,1px,1px,1px;
+		color: white;
+		position: absolute;
+		left: 1000px;
+		top: 550px;
+		width: 240px;
+		height:40px;
+		}
+		
+		.butonideo{
+		background-color: red;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		width: 140px;
+		height:40px;
+		
+		}
+		
+		.butonnüf{
+		background-color: red;
+		opacity:0.7;
+		border-radius:  8px/4px;
+		width: 240px;
+		height:40px;
+		
+		}
+		.up{
+		border-radius: 10px;
+		}
+		
+		.down{
+		border-radius:  10px;
+		}
+
+	
+	
+  </style>
+    </head>
+    <body>
+		<canvas  class="game"></canvas>
+		<div id="divpara" class="para" align="center" ><font>Para</font></br><div id="para">10000</div></div>
+		<div id="divbütünlük" class="bütünlük" align="center">Bütünlük</br><div id="bütünlük">100</div></div>
+		<div id="divgüvenlik" class="güvenlik" align="center">Güvenlik</br><div id="güvenlik">100</div></div>
+		<div id="divtarif"  class="tarih" align="center">Yıl/ay</br><div><font id="tarih">2000</font>/<font id="ay">1</font></div></div>
+		<div id="divrefah"  class="refah" align="center">Refah</br><div id="refah">1000</div></div>
+		<div id="divsadakat"  class="sadakat" align="center">Sadakat</br><div id="sadakat">50</div></div>
+		
+		<div id="divparad"class="paradeğişim" align="center"><font size="1.5">Para Değişimi</br><div id="pdeğişim">0</div></font></div>
+		<div id="divbütünlükd"class="bütünlükdeğişim" align="center"><font size="1.5">Bütünlük Değişimi</br><div id="bdeğişim">0</div></font></div>
+		<div id="divgüvenlikd"class="güvenlikdeğişim" align="center"><font size="1.5">Güvenlik Değişimi</br><div id="gdeğişim">0</div></font></div>
+		<div id="divsadakatd"class="sadakatdeğişim" align="center"><font size="1.5">Sadakat Değişimi</br><div id="sdeğişim">0</div></font></div>
+		<div id="divrefahd"class="refahdeğişim" align="center"><font size="1.5">Refah Değişimi</br><div id="rdeğişim">0</div></font></div>
+
+		<div title="üretim " id="üretim" class="üretim"><button class="down" onclick="üretimDown()">-</button>&nbsp Üretim:<font id="üretimLvl">0</font> &nbsp <button  class="up" onclick="üretimUp()" onmouseover="üretimsonuç(2,0,0,0,0,1,0,0,0,2)" onmouseout="sonuçback()">+</button></div>
+		<div class="eğitim"><button class="down" onclick="eğitimDown()">-</button>&nbsp Eğitim:<font id="eğitimLvl">0</font> &nbsp <button class="up" onclick="eğitimUp()" onmouseover="üretimsonuç(2,0,0,0,0,1,2,1,0,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="adalet"><button class="down" onclick="adaletDown()">-</button>&nbsp Adalet:<font id="adaletLvl">0</font>&nbsp <button class="up" onclick="adaletUp()" onmouseover="üretimsonuç(0,0,0,0,0,2,1,1,1,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="turizm"><button class="down" onclick="turizmDown()">-</button>&nbsp Turizm:<font id="turizmLvl">0</font> &nbsp <button class="up" onclick="turizmUp()" onmouseover="üretimsonuç(2,0,0,0,0,1,2,0,2,0)" onmouseout="sonuçback()">+</button></div>
+		<div class="dışilişki"><button class="down" onclick="dışilişkiDown()">-</button>&nbsp Dışilişki:<font id="dışilişkiLvl">0</font> &nbsp <button class="up" onclick="dışilişkiUp()" onmouseover="üretimsonuç(2,2,0,0,0,0,0,1,2,0)" onmouseout="sonuçback()">+</button></div>
+		<div class="vergi"><button class="down" onclick="vergiDown()">-</button>&nbsp  Vergi:<font id="vergiLvl">0 </font>&nbsp <button class="up" onclick="vergiUp()" onmouseover="üretimsonuç(0,2,0,0,0,1,2,0,2,2)" onmouseout="sonuçback()">+</button></div>
+		<div class="ihracat"><button class="down" onclick="ihracatDown()">-</button>&nbsp İhracat:<font id="ihracatLvl"> 0</font> &nbsp <button class="up" onclick="ihracatUp()" onmouseover="üretimsonuç(0,0,0,0,0,1,1,0,0,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="ithalat"><button class="down" onclick="ithalatDown()">-</button>&nbsp İthalat:<font id="ithalatLvl">0</font> &nbsp <button class="up" onclick="ithalatUp()" onmouseover="üretimsonuç(2,2,0,0,0,2,2,0,0,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="ordu"><button class="down" onclick="orduDown()">-</button>&nbsp Ordu:<font id="orduLvl">0</font> &nbsp <button class="up" onclick="orduUp()" onmouseover="üretimsonuç(2,0,0,0,0,2,1,1,0,0)" onmouseout="sonuçback()">+</button></div>
+		<div class="sağlık"><button class="down" onclick="sağlıkDown()">-</button>&nbsp Sağlık:<font id="sağlıkLvl">0</font> &nbsp <button class="up" onclick="sağlıkUp()" onmouseover="üretimsonuç(2,0,0,0,0,2,1,0,1,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="istihdam"><button class="down" onclick="istihdamDown()">-</button>&nbsp İstihdam:<font id="istihdamLvl">0</font> &nbsp <button class="up" onclick="istihdamUp()" onmouseover="üretimsonuç(0,0,0,0,0,1,0,0,1,1)" onmouseout="sonuçback()">+</button></div>
+		<div class="akademi"><button class="down" onclick="akademiDown()">-</button>&nbsp Akademi:<font id="akademiLvl">0</font> &nbsp <button class="up" onclick="akademiUp()" onmouseover="üretimsonuç(0,0,0,0,0,1,1,0,0,0)" onmouseout="sonuçback()">+</button></div>
+		
+		<div class="ideoloji" align="center"><font>İdeoloji Seçimi</font></div>
+		<div class="kapitalizm" align="center"><button id="kbut" class="butonideo" onclick="kapitalizm()" onmouseover="üretimsonuç(0,0,0,0,0,1,0,0,0,0)" onmouseout="sonuçback()"><b>kapitalizm</b></button></div>
+		<div class="sosyalizm" align="center"><button id="sbut" class="butonideo" onclick="sosyalizm()" onmouseover="üretimsonuç(0,0,0,0,0,0,0,0,0,1)" onmouseout="sonuçback()"><b>sosyalizm</b></button></div>
+		<div class="monarşizm" align="center"><button id="mbut" class="butonideo" onclick="monarşizm()"onmouseover="üretimsonuç(0,0,0,0,0,0,0,0,1,0)" onmouseout="sonuçback()"><b>monarşizm</b></button></div>
+		<div class="teokrasi" align="center"><button id="tbut" class="butonideo" onclick="teokrasi()" onmouseover="üretimsonuç(0,0,0,0,0,0,1,0,0,0)" onmouseout="sonuçback()"><b>teokrasi</b></button></div>
+		<div class="anarşizm" align="center"><button id="abut" class="butonideo" onclick="anarşizm()" onmouseover="üretimsonuç(0,0,0,0,0,0,0,2,0,0)" onmouseout="sonuçback()"><b>anarşizm</b></button></div>
+		
+		<div class="nüfusyön" align="center"><font>Nüfus Yönelimi</font></div>
+		<div class="narttır" align="center"><button id="nupbut" class="butonnüf" onclick="nup()"onmouseover="üretimsonuç(0,0,0,0,0,1,2,0,0,0)" onmouseout="sonuçback()"><b>Arttır</b></button></div>
+		<div class="nsabit" align="center"><button id="nsabbut" class="butonnüf" onclick="nsab()"><b>Sabit</b></button></div>
+		<div class="nazalt" align="center"><button id="ndownbut" class="butonnüf" onclick="ndown()"onmouseover="üretimsonuç(0,0,0,0,0,0,0,1,0,1)" onmouseout="sonuçback()"><b>Azaltma</b></button></div>
+		
+		<div class="baslat" align="center"><button  class="baslatbuton" onclick="baslatbuton()"><b>BAŞLAT/DEVAM ETTİR</b></button></div>
+		<div class="durdur" align="center"><button  class="durdurbuton" onclick="durdurbuton()"><b>DURDUR</b></button></div>
+		<script src="game.js"></script>
+		
+    </body>
+</html>
