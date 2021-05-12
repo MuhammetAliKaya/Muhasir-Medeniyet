@@ -12,8 +12,8 @@ BÜTÜNLÜK>=100 değerleri sağlandığında galibiyetle sonuçlanmaktadır.PAR
 
 ## Oyundan Görüntüler
 ___
-![](GAMESS.png)
-![](GAMESS1.png)
+![](GAMESS1.PNG)
+![](GAMESS2.PNG)
 
 ## Teknolojiler
 ___
